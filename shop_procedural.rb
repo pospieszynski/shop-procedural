@@ -39,7 +39,7 @@ def price_netto basket
   basket.inject(0) { |sum, n| sum + n[:price] * n[:quantity] }
 end
 
-def resit basket
+def receipt basket
   puts '**************'
   puts "**BIEDRONKA**"
   puts '**************'
@@ -75,4 +75,4 @@ end
 end
 # puts "Basket after removing stuff" + basket.inspect
 # puts "Warehose after putting  things back " + warehouse.inspect
-resit basket
+receipt basket
